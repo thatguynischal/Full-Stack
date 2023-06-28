@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import { Routes, Route, Link } from "react-router-dom";
+import Edit from "./pages/Edit";
+import View from "./pages/View";
 
 function App() {
   return (
@@ -77,6 +79,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/view/:id" element={<View />} />
+
         </Routes>
       </div>
     </>
